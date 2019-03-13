@@ -1,0 +1,103 @@
+@mixin button {
+  display: inline-block;
+  background-color: #595959;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  width: 60px;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+.settings__section {
+  border: 1px solid rgba(150, 150, 150, 0.28);
+  background-color: rgba(150, 150, 150, 0.28);
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.btn__section {
+  margin-top: 25px;
+}
+
+.submit {
+  background-color: #595959;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 60px;
+}
+
+.submit:active {
+  text-decoration: none;
+}
+
+.btn__reset {
+  @include button;
+}
+
+.btn_fill {
+@include button;
+}
+
+.btn_erase {
+ @include button;
+}
+
+.btn_draw {
+  @include button;
+}
+
+.submit:hover,.btn__reset:hover,.btn_fill:hover,.btn_erase:hover,.btn_draw:hover {
+  background-color: #3f3f3f;
+}
+
+.submit:active,.btn__reset:active,.btn_fill:active,.btn_erase:active,.btn_draw:active {
+  transform: scale(0.99) translate(0, 1px);
+}
