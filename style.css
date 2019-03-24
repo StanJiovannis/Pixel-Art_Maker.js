@@ -29,6 +29,18 @@ h1 {
   box-shadow: 1px 1px 3px;
 }
 
+@media only screen and (max-width: 1404px) {
+  .submit {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 922px) {
+  .btn_draw {
+    margin-top: 10px;
+  }
+}
+
 h2 {
     margin: 1em 0 0.25em;
 }
